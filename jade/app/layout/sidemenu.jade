@@ -1,0 +1,29 @@
+ion-side-menus
+	ion-side-menu-content(ng-controller="SidemenuCtrl")
+		ion-nav-bar.bar-positive
+			ion-nav-back-button.button-icon.ion-arrow-left-c
+			ion-nav-buttons(side="left")
+				button.button.button-icon.button-clear.ion-navicon(ng-click="leftMenu()")
+			ion-nav-buttons(side="right")
+				button.button.button-icon.button-clear.ion-ios-gear(ng-click="rightMenu()")
+
+		ion-nav-view(animation="slide-left-right")
+
+	ion-side-menu(side="left")
+		ion-header-bar.bar.bar-header.bar-dark
+			h1.title Reedu
+
+		ion-content(has-header="true")
+			ul.list
+				li: a.item(ui-sref="#" ng-click="toggleLeft()") Improve Credit
+				li: a.item(ui-sref="#" ng-click="toggleLeft()") Advanced Search
+				li: a.item(ui-sref="#" ng-click="toggleLeft()") Settings
+				li: a.item(ui-sref="#" ng-click="toggleLeft()") Log Out
+
+	ion-side-menu(side="right")
+		ion-header-bar.bar.bar-header.bar-dark
+			h1.title Settings
+
+		ion-content(has-header="true")
+			ul.list
+				li: a.item(ui-sref="#" ng-click="toggleRight()" menu-close nav-clear) Options

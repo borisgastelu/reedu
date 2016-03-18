@@ -1,0 +1,9 @@
+{
+    "name": "reedu",
+    "app_id": "",
+    "gulpStartupTasks": [
+        "jade",
+        "sass",
+        "watch"
+    ]
+}
