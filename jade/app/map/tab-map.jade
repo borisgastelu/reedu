@@ -1,0 +1,5 @@
+ion-view(view-title="Map")
+	ion-content.has-header
+		#map-canvas
+			ui-gmap-google-map(draggable="true" center="map.center" zoom="map.zoom" options="options")
+				ui-gmap-marker(coords="marker.coords" idkey="marker.id")

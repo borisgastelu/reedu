@@ -1,0 +1,33 @@
+doctype html
+head
+	meta(charset="utf-8")
+	meta(name="viewport", content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width")
+
+	link(rel="stylesheet", href="css/ionic.app.css")
+
+body(ng-app="app")
+	div(ng-include="'/app/layout/sidemenu.html'")
+
+	//- ionic/angularjs js
+	script(src="lib/ionic/js/ionic.bundle.js")
+
+	//- cordova script (this will be a 404 during development)
+	script(src="lib/ngCordova/dist/ng-cordova.js")
+	script(src="cordova.js")
+
+	//- Angular Google Maps
+	script(src='//maps.googleapis.com/maps/api/js?sensor=false')
+	script(src='lib/lodash/dist/lodash.min.js')
+	script(src='lib/angular-simple-logger/dist/angular-simple-logger.min.js')
+	script(src='lib/angular-google-maps/dist/angular-google-maps.min.js')
+
+	// app scripts
+	script(src="app/app.js")
+	script(src="app/app.routes.js")
+	script(src="app/layout/sidemenuCtrl.js")
+	script(src="app/map/mapCtrl.js")
+	script(src="app/account/accountCtrl.js")
+	script(src="app/chats/chatsCtrl.js")
+	script(src="app/chats/chatDetailCtrl.js")
+	script(src="app/chats/chats.js")
+	script(src="app/pre-qualify/preQualifyCtrl.js")
