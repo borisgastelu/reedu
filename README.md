@@ -4,42 +4,42 @@ This a mobile based on Ionic Framework and Apache Cordova
 
 ## Configuration Process
 
-    * Intalling Node.js, Bower packages and running Gulp tasks to generate html and css files
+1. Intalling Node.js, Bower packages and running Gulp tasks to generate html and css files
 
-        `npm start`
+    `npm start`
 
-    * Regenerate Ionic platforms and Cordova plugins
+2. Regenerate Ionic platforms and Cordova plugins
 
-        `ionic state reset`
+    `ionic state reset`
 
-    * Running the Ionic application in the browser
+3. Running the Ionic application in the browser
 
-        `ionic serve`
+    `ionic serve`
 
 ## Testing on an Android Emulator
 
-    - This commands allow us to see changes automatically in the emulator.
+* This commands allow us to see changes automatically in the emulator.
 
-        `ionic emulate android --livereload --consolelogs`
+    `ionic emulate android --livereload --consolelogs`
 
-    - We can use the short form as well:
+* We can use the short form as well:
 
-        `ionic emulate android -l -c`
+    `ionic emulate android -l -c`
 
 ## Testing in an Android device
 
-    - If we want to test in a specific device, we may connect it via usb and then run the following:
+* If we want to test in a specific device, we may connect it via usb and then run the following:
 
-        `ionic run android --livereload --consolelogs`
+    `ionic run android --livereload --consolelogs`
 
-    - To see the changes and debug, in the browser type the following URL
+* To see the changes and debug, in the browser type the following URL
 
-        `chrome://inspect/`
+    `chrome://inspect/`
 
 ## Create Android Application Package (.apk)
 
-    This command creates a android-debug.apk that we can install in an Android device
+* This command creates a android-debug.apk that we can install in an Android device
 
-       `ionic build android`
+   `ionic build android`
 
-       OUTPUT PATH: `/platforms/android/build/outputs/apk/`
+   OUTPUT PATH: `/platforms/android/build/outputs/apk/`
